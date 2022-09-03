@@ -1,0 +1,15 @@
+[submodule "lib/twinThingWizFi360"]
+	path = lib/twinThingWizFi360
+	url = https://github.com/jondurrant/twinThingWizFi360
+[submodule "lib/CMSIS-Driver"]
+	path = lib/CMSIS-Driver
+	url = https://github.com/ARM-software/CMSIS-Driver.git
+[submodule "lib/CMSIS-FreeRTOS"]
+	path = lib/CMSIS-FreeRTOS
+	url = https://github.com/ARM-software/CMSIS-FreeRTOS.git
+[submodule "lib/CMSIS_5"]
+	path = lib/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "lib/IoT_Socket"]
+	path = lib/IoT_Socket
+	url = https://github.com/MDK-Packs/IoT_Socket.git
