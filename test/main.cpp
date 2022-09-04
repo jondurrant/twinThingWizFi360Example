@@ -20,6 +20,7 @@
 #include "cmsis_os2.h"
 
 #include "TestWifi.h"
+#include "TestTrans.h"
 
 
 //Standard Task priority
@@ -92,6 +93,8 @@ void mainTask(void *params){
 	BlinkAgent blink(LED_PAD);
 	//NetConn netConn;
 	TestWifi testWifi;
+	TestTrans testTrans;
+
 
 
 	vTaskDelay(2000);
@@ -100,6 +103,10 @@ void mainTask(void *params){
 	blink.start("Blink", TASK_PRIORITY);
 	testWifi.start("testWifi", TASK_PRIORITY);
 	//netConn.start("NetConn", TASK_PRIORITY);
+
+	vTaskDelay(3000);
+
+	testTrans.start("Test Trans", TASK_PRIORITY);
 
 
 	while (true) { // Loop forever

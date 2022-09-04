@@ -4,6 +4,7 @@ add_executable(${NAME}
         Agent.cpp
         NetConn.cpp
         TestWifi.cpp
+        TestTrans.cpp
         )
 
 # Pull in our pico_stdlib which pulls in commonly used features

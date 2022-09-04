@@ -13,3 +13,15 @@
 [submodule "lib/IoT_Socket"]
 	path = lib/IoT_Socket
 	url = https://github.com/MDK-Packs/IoT_Socket.git
+[submodule "lib/coreMQTT"]
+	path = lib/coreMQTT
+	url = https://github.com/FreeRTOS/coreMQTT
+[submodule "lib/coreMQTT-Agent"]
+	path = lib/coreMQTT-Agent
+	url = https://github.com/FreeRTOS/coreMQTT-Agent
+[submodule "lib/json-maker"]
+	path = lib/json-maker
+	url = https://github.com/rafagafe/json-maker
+[submodule "lib/tiny-json"]
+	path = lib/tiny-json
+	url = https://github.com/rafagafe/tiny-json
