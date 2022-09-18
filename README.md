@@ -47,3 +47,24 @@ Copy src/twinTest.elf to pico
 + ExampleAgentObserver - Observer for the MQTT Agent
 + main - set up
 + StateExample - example state object for a Thing, has RGB and On/off state. Adds to temperate state of teh standard Twin.
+
+
+## Python Test Client
+Python3 test client using Paho is included in the *py* folder.
+
+All Python scripts expect environment variable for MQTT service:
++ MQTT_USER: Username to connect to MQTT, will also be used as device name
++ MQTT_PASSWD: Password for authentication
++ MQTT_HOST: Hostname of IP address of the MQTT server
++ MQTT_PORT: Port that MQTT is running on. Normal 1883
+
+Python scripts normally take a parameter of the name of the thing to query. If device is called pico then to ping the device would use the command.
+```
+$ python3 ping.py pico
+```
+
+Scripts:
++ get.py: Get the current state of the Thing
++ ping.py: Ping a single Thing
++ pingAll.py: Ping all devices though the All group
++ set.py: Set the state of the thing
